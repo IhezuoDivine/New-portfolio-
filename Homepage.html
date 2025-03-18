@@ -5,37 +5,54 @@
     <title>Chikezie blog</title>
     <meta charset="utf-8">
      <link rel="stylesheet" href="Homepage.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
   </head>
   <body>
     <header id="my header">
      <h1 class="headerh1">Chi<span class="headerspan">Kezie</span></h1>
      <nav id="navbtn">
-      <a href="#Homepage.html" class="headerlink" id="Homelink">Home</a>
+      <a href="#Homepage" class="headerlink" id="Homelink">Home</a>
       <a href="#service" class="headerlink">Service</a> 
       <a href="#blog" class="headerlink" id="bloglink">Blog</a>
-      <a href="Project page.html" class="headerlink">Portfolio</a>
-      <a href="#contact" class="headerlink">Contact</a>
+      <a href="#Projectport" class="headerlink">Portfolio</a>
+      <a href="#Reachout" class="headerlink">Contact</a>
      </nav>
     </header>
   
-    <section id="Homepage">
+    <section id="Homepage" class="Homepage">
      <div class="Homepageimage">
       <img src="Image/View recent photos.png" alt="" class="imagehomepage">
+      <div class="socials">
+        </a>
+        <a href="https://x.com/dev_chikezie?s=21" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/ihezuodivine?igsh=MXh6aWllNjZvbmV6NQ%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ihezuo-divine-4517892b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/IhezuoDivine" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+    </div>
       </div>
-      <h1 class="Homepageh1">Building the Future of the <br> Web </h1>
+      <h1 class="Homepageh1">Building the Future of the Web </h1>
        <div class="Homepagediv">
-         <p>Hi, I'm Ihezuo Divine Chikezie,
-         <br><span class="Homepagespan">{Full-Stack 
-         <br><span class="Homepagespan">Developer}</span></span>
-         <br> passionate about creating seamless, decentralized experiences.</p>
+         <p class="Homepagename">Hi, I'm Chikezie,</p>
+         <p class="Homepagespan">{Full-Stack Developer}
+         <br><span class="Homepagespanp">passionate about creating seamless, 
+        <br> decentralized experiences.</span></p>
        </div>
-          <a href="#project page.html" class="viewmywork">View My Work</a>
-          <a href="assets/cv.pdf" download="Ihezuo_Divine_CV.pdf" class="CV">
+          <a href="#Projectport" class="viewmywork">View My Work</a>
+          <a href="Image/MY RESUME.IHEZUO.DIVINE.pdf" download="Ihezuo_Divine_CV.pdf" class="CV">
            <button>Download My CV</button>
          </a>
     </section>
 
-    <section class="servicepage">
+    <section class="servicepage" id="service">
      <div class="servicediv">
       <h1 class="serviceh1" >Services</h1>
        <ul>
@@ -58,9 +75,9 @@
      </div>
     </section>
 
-    <section class="blogpage" id="blogpage">
+    <section class="blogpage">
     <h1 class="blogpageh1">My Blog</h1>
-      <div class="blog1">
+      <div class="blog1" id="blog">
       <img src="Image/IMG_3485.jpg" alt="" class="blog1img">
        <span class="blogspan">Building  My Portfolio Lessons Learned</span><br>
        Creating my portfolio wasn’t
@@ -115,32 +132,137 @@
      <button id="showmore">Click for more</button>
     </section>
 
-    <section id="projectpage">
+    <section id="Projectport">
     <input type="checkbox" name="showall" id="showall" class="showallclass">
     <label for="showall" class="showallbtn">Show All project</label>
 
      <div class="project"> 
-      <h1></h1>
+      <h1><span class="projectspan">Login Form</span><br>
+      Secure & Simple User Authentication</h1>
+      <img src="Image/IMG_3478.jpg" alt="">
+      <p>A clean and responsive login
+       form with validation to ensure
+        secure user authentication.  </p>
      </div>
-     <div class="project"> Hello
+
+     <div class="project">
+      <h1><span class="projectspan">Compound Interest Calculator App</span><br>
+       Smart Savings & Investment Calculator</h1>
+      <img src="Image/IMG_3480.jpg" alt="">
+      <p>Easily calculate compound interest 
+       to plan investments and track growth
+        over time.  </p>
      </div>
-     <div class="project"> Hello
+
+     <div class="project"> 
+     <h1><span class="projectspan">Temperature Conversion</span><br>
+      Instant Temperature Converter</h1>
+      <img src="Image/IMG_3482.jpg" alt="">
+     <p>Convert temperatures between Celsius, Fahrenheit, 
+       and Kelvin with a simple and accurate tool.  </p>
      </div>
-     <div class="project"> Hello 
+     <div class="project"> 
+      <h1><span class="projectspan">LinkedIn Login Form</span><br>
+       Seamless LinkedIn Authentication</h1>
+       <img src="Image/IMG_3504.jpg" alt="">
+       <p>A LinkedIn login system for quick and secure
+        access using OAuth integration.  </p>
      </div>
-     <div class="project"> Hello 
+     <div class="project"> 
+      <h1><span class="projectspan">Calculator</span><br>
+       Fast & Accurate Calculator</h1>
+       <img src="Image/IMG_3489.jpg" alt="">
+       <p>A lightweight and efficient calculator
+        for basic arithmetic operations.  </p>
      </div>
-     <div class="project"> Hello 
+     <div class="project"> 
+     <h1><span class="projectspan">Weatherc App</span><br>
+      Real-Time Weather Updates</h1>
+      <img src="Image/IMG_3487.jpg" alt="">
+      <p>Check live weather conditions and forecasts
+        for any location with this simple weather app.</p>
      </div>
     </section>
 
-    <section>
-     <div>
+
+    <section class="contactpage" id="contactpage">
+     <div id="contactdiv">
+      <h1 id="Reachout">Lets Connect</h1>
+       <form id="contactform">
+        <label for="name">Name</label>
+        <input type="text" placeholder="Your Name" name="name" id="name">
+
+        <label for="email.">Email</label>
+        <input type="email" placeholder="Your Email " name="email" id="email">
+
+        <label for="Address">Address</label>
+        <input type="text" placeholder="Address" name="address" id="address">
+
+        <label for="phone">Phone</label>
+        <input type="number" placeholder="Your Phone" name="phone" id="phone">
+
+        <label for="subject">Subject</label>
+        <input type="text" placeholder="Subject" name="buject" id="subject">
+
+        <label for="content">Content</label>
+         <textarea name="content" id="content" placeholder="Write Your message here" cols="30" rows="10"></textarea>
+       </form>
+
+        <button type="submit" id="submitbtn">Send message</button>
+         
+        <p id="errormessage" style="color:red;"></p>
+        
+
+       <div class="contactmedia">
+
+        <p><i class="fa-solid fa-phone"></i>Phone <br>
+         <span>+2349122400930</span>
+      
+        <p><br><i class="fa-solid fa-envelope"></i>Email <br>
+         <span>ihezuodivine@gmail.com</span></p>
+
+        <p><br><i class="fa-brands fa-linkedin"></i>Linkedin <br>
+         <span>Ihezuo Divine</span></p>
+
+        <p><br><i class="fa-solid fa-location-dot"></i>Address<br>
+         <span>Visit my GitHub</span></p>
+       </div>
      </div>
     </section>
   
-   <footer>
-  </footer>
+    <footer class="footerpage">
+    <div class="footerdiv">
+        <a href="#Homepage">Home</a>
+        <a href="#service">Service</a>
+        <a href="#blog">Blog</a>
+        <a href="#Projectport">Portfolio</a>
+        <a href="#Reachout">Contact</a>
+    </div>
+    <div class="social">
+        <a href="tel:+23409122400930">
+          <i class="fa-solid fa-phone"></i>
+        </a>
+        <a href="https://facebook.com" target="_blank">
+            <i class="fa-brands fa-facebook"></i>
+        </a>
+        <a href="https://x.com/dev_chikezie?s=21" target="_blank">
+            <i class="fa-brands fa-twitter"></i>
+        </a>
+        <a href="https://www.instagram.com/ihezuodivine?igsh=MXh6aWllNjZvbmV6NQ%3D%3D&utm_source=qr" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+        </a>
+        <a href="https://www.linkedin.com/in/ihezuo-divine-4517892b6?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+            <i class="fa-brands fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/IhezuoDivine" target="_blank">
+            <i class="fa-brands fa-github"></i>
+        </a>
+        <a href="mailto:ihezuodivine@gmail.com">
+           <i class="fa-solid fa-envelope"></i>
+        </a>
+       <p class="copyright">© 2025 Chikeziewebsite. All Rights Reserved.</p></p>
+    </div>
+</footer>
 
    <script src="Homepage.js"></script>
   </body>
