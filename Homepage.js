@@ -80,30 +80,10 @@
     showmore.addEventListener("click", function (event) {
         event.preventDefault();
         blogdiv.style.display = "block";
-        this.style.display = "none"; // Hide the button after clicking
+        this.style.display = "none"; 
    }); 
-/*
-   const navbarLinks = document.querySelectorAll("#navbtn a");
-const sections = document.querySelectorAll("section");
 
-const observer = new IntersectionObserver((entries) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      // Reset all nav links to default color
-      navbarLinks.forEach(link => link.classList.Remove = "active");
 
-      // Find the matching nav link
-      const activeLink = document.querySelector(`#navbtn a[href="#${entry.target.id}"]`);
-      
-      if (activeLink) {
-        activeLink.classList.add("active";) // Change color for the active section
-      }
-    }
-  });
-}, { threshold: 0.5 });
-
-sections.forEach(section => observer.observe(section));
-*/
 const navbarLinks = document.querySelectorAll("#navbtn a");
 const sections = document.querySelectorAll("section");
 

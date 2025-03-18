@@ -310,13 +310,11 @@ nav{
     max-width: 400px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    position: absolute; /* Stack all projects on top of each other */
-    opacity: 0; /* Initially hidden */
+    position: absolute;
+    opacity: 0; 
     transform: translateY(20px);
     animation: slideFade 4s infinite;
 }
-
-/* Staggered animation for each project */
 .project:nth-child(1) { animation-delay: 0s; }
 .project:nth-child(2) { animation-delay: 2s; }
 .project:nth-child(3) { animation-delay: 4s; }
@@ -324,16 +322,14 @@ nav{
 .project:nth-child(5) { animation-delay: 8s; }
 .project:nth-child(6) { animation-delay: 10s; }
 
-/* Keyframes for slide-in and fade-out effect */
 @keyframes slideFade {
     0% { opacity: 0; transform: translateY(20px); }
-    10% { opacity: 1; transform: translateY(0); } /* Show project */
-    40% { opacity: 1; transform: translateY(0); } /* Keep visible */
-    50% { opacity: 0; transform: translateY(-20px); } /* Fade out */
+    10% { opacity: 1; transform: translateY(0); } 
+    40% { opacity: 1; transform: translateY(0); } 
+    50% { opacity: 0; transform: translateY(-20px); } 
     100% { opacity: 0; transform: translateY(-20px); }
 }
 
-/* Show All Button */
 .showallbtn {
     display: inline-block;
     margin-bottom:16px;
@@ -349,17 +345,14 @@ nav{
 .showallbtn:hover {
     background-color: hsl(158, 100%, 70%);
 }
-
-/* Hide checkbox */
 .showallclass {
     display: none;
 }
 
-/* When checkbox is checked, show all projects */
 .showallclass:checked ~ .project {
     position: relative;
     opacity: 1;
-    animation: none; /* Disable animation */
+    animation: none; 
     transform: translateY(0);
 }
 .project img {
@@ -444,7 +437,7 @@ input {
 }
 #content{
   width: 100%;
-  min-height: 100px; /* Initial height */ /* Allows it to fit content */
+  min-height: 100px;
   max-height: 500px; 
   overflow-y: auto;
   background-color:hsl(0,2%,20%);
