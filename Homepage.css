@@ -77,6 +77,11 @@ nav{
   background-color:var(--second-bg-color);
   color:white;
 }
+#navbtn a.active {
+  color: hsl(158, 100%, 50%); /* Bright green */
+  font-weight: bold; /* Optional: Make active link bold */
+  transition: color 0.3s ease;
+}
  .Homepage{
   min-height:100vh;
   display:block;

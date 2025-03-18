@@ -69,12 +69,12 @@
     blogdiv.style.display = "none";
 
     // Show full blog section when "Blog" link is clicked
-    bloglink.addEventListener("click", function (event) {
-        event.preventDefault();
-        blogh1.style.display = "block"; // Show blog section
-        blogdiv.style.display = "block"; // Show all blog posts
-        showmore.style.display = "none"; // Hide "Click for More" button
-    });
+    //bloglink.addEventListener("click", function (event) {
+     //   event.preventDefault();
+      //  blogh1.style.display = "block"; // Show blog section
+     //   blogdiv.style.display = "block"; // Show all blog posts
+    //    showmore.style.display = "none"; // Hide "Click for More" button
+   // });
 
     // "Click for More" button to show extra blog posts
     showmore.addEventListener("click", function (event) {
@@ -82,3 +82,44 @@
         blogdiv.style.display = "block";
         this.style.display = "none"; // Hide the button after clicking
    }); 
+/*
+   const navbarLinks = document.querySelectorAll("#navbtn a");
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Reset all nav links to default color
+      navbarLinks.forEach(link => link.classList.Remove = "active");
+
+      // Find the matching nav link
+      const activeLink = document.querySelector(`#navbtn a[href="#${entry.target.id}"]`);
+      
+      if (activeLink) {
+        activeLink.classList.add("active";) // Change color for the active section
+      }
+    }
+  });
+}, { threshold: 0.5 });
+
+sections.forEach(section => observer.observe(section));
+*/
+const navbarLinks = document.querySelectorAll("#navbtn a");
+const sections = document.querySelectorAll("section");
+
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      // Remove 'active' class from all links
+      navbarLinks.forEach(link => link.classList.remove("active"));
+
+      // Find the matching nav link and add 'active' class
+      const activeLink = document.querySelector(`#navbtn a[href="#${entry.target.id}"]`);
+      if (activeLink) {
+        activeLink.classList.add("active");
+      }
+    }
+  });
+}, { threshold: 0.5 });
+
+sections.forEach(section => observer.observe(section));
